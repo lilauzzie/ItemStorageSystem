@@ -48,13 +48,15 @@ public class StorageSystem extends JFrame {
         scrollPane.setPreferredSize(new Dimension(Reference.INT_WINDOW_WIDTH / 2, Reference.INT_WINDOW_HEIGHT - 150));
         leftPanel.add(scrollPane, BorderLayout.CENTER);
 
-        buttonTable = new JTable();
-        leftPanel.add(buttonTable);
+        //buttonTable = new JTable();
+        //leftPanel.add(buttonTable);
+        rightPanel = new JPanel();
+        rightPanel.setPreferredSize(new Dimension(Reference.INT_WINDOW_WIDTH / 2, Reference.INT_WINDOW_HEIGHT - 150));
 
         titleTextPane = new JTextArea("title");
         titleTextPane.setPreferredSize(new Dimension(150, 24));
         titleTextPane.setAlignmentY(Component.TOP_ALIGNMENT);
-        leftPanel.add(titleTextPane);
+        rightPanel.add(titleTextPane);
     }
 
     public void CreateColumns() {
